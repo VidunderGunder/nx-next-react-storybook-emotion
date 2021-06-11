@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
+import { css } from "@emotion/react";
 
 const StyledPage = styled.div`
   .page {
@@ -14,6 +14,13 @@ export function Index() {
    */
   return (
     <StyledPage>
+      <div
+        css={css`
+          background-color: hotpink;
+        `}
+      >
+        This has a hotpink background.
+      </div>
       <h2>Resources &amp; Tools</h2>
       <p>Thank you for using and showing some ♥ for Nx.</p>
       <div className="flex github-star-container">
@@ -22,7 +29,7 @@ export function Index() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {' '}
+          {" "}
           If you like Nx, please give it a star:
           <div className="github-star-badge">
             <img src="/star.svg" className="material-icons" alt="" />
