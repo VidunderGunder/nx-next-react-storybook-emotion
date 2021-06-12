@@ -2,6 +2,8 @@ import { css } from "@emotion/react";
 
 /* eslint-disable-next-line */
 export interface PhormixProps {}
+
+export default Phormix;
 export function Phormix(props: PhormixProps) {
   return (
     <>
@@ -11,10 +13,8 @@ export function Phormix(props: PhormixProps) {
           background-color: hotpink;
         `}
       >
-        This has a hotpink background.
+        <p>This has a hotpink background.</p>
       </div>
     </>
   );
 }
-
-export default Phormix;
